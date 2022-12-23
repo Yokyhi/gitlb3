@@ -3,7 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class FunctionTest extends TestCase {
+public class FunctionTest {
 
     Function function;
 
@@ -16,4 +16,11 @@ public class FunctionTest extends TestCase {
     public void functionResult() {
         Assert.assertEquals(97.48636634052538, Function.func(),0.5);
     }
+
+    @Test
+    public void xCheck(){
+        boolean check = Function.getX() > 0;
+        Assert.assertEquals(true, check);
+    }
+
 }
